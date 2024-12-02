@@ -4,12 +4,121 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Website Kalkulator BMI</title>
     <link rel="stylesheet" href="css\styles.css">
 </head>
 
 <body>
+     <!-- Website title -->
+     <section>
+            <header class="main-header">
+                <h1>Kalkulator BMI (Body Mass Index)</h1>
+            </header>
+
+    <!-- Konten Website -->
+    <main>
+        <!-- Section Form Kalkulator BMI -->
+        <section class="main-section">
+            <!-- Main Article (atas) -->
+             <h2>   
+                Yuk Cek BMI Kamu!
+             </h2>
+            <article>
+                <p class="paragraf">Berat badan ideal adalah impian semua orang. Tidak hanya memiliki bentuk tubuh yang menunjang penampilan, berat badan ideal juga menandakan kondisi tubuh yang sehat. Bagaimana denganmu? Yuk, hitung sekarang di BMI Kalkulator.
+                <br> 
+                #BMIsehat #tubuhideal #hidupsehat
+                </p>
+            </article>
+
+
+        <!--Calculate Form groups-->
+        <form> 
+            </div>
+                <label for="jenis-kelamin">Jenis Kelamin:</label>
+                    <div class="radio-item">
+                        <input type="radio" name="jenis-kelamin" value="pria" checked> Pria
+                        <input type="radio" name="jenis-kelamin" value="wanita"> Wanita
+                    </div>
+
+            <div class="form-item">
+                <label for="berat-badan-input">Berat Badan (kg):</label>
+                <input type="number" id="berat-badan-input" required  placeholder="Berat badan kamu berapa kilogram?"
+                required oninvalid="this.setCustomValidity('Berat bada kamu belum diisi');" onchange="try{setCustomValidity('')}catch(e){};" x-moz-errormessage="Berat bada kamu belum diisi"> <!--custom error message form-->
+            </div>
+
+            <div class="form-item">
+                <label for="usia-input"> Usia (tahun):</label>
+                <input type="number" id="usia-input" required placeholder="Berapa usia kamu? (mininal 18 tahun ya)"
+                required oninvalid="this.setCustomValidity('Jangan lupa diisi ya!');" onchange="try{setCustomValidity('')}catch(e){};" x-moz-errormessage="Jangan lupa diisi ya!"> <!--custom error message form-->
+            </div>
+
+            <div class="form-item">
+                <label for="tinggi-badan-input">Tinggi Badan (cm):</label>
+                <input type="number" id="tinggi-badan-input" required placeholder="Tinggi badan kamu?"
+                required oninvalid="this.setCustomValidity('Tinggi badan kamu belum diisi');" onchange="try{setCustomValidity('')}catch(e){};" x-moz-errormessage="Tinggi badan kamu belum diisi"> <!--custom error message form-->
+            </div> 
+
+
+            <!--Action button-->
+            <div class="form-button-container">
+                <button class="bg-primary-button">Hitung BMI</button>
+                <button class="bg-secondary-button">Reset</button>
+            </div>
+        </form>
+
+        <!-- Second Article (bawah)-->
+        <article>
+            <header>
+                <h3>Keunggulan Fitur</h3>
+            </header>
+
+            <ol>
+                <li>Menghitung berat badan</li>
+                <li>Menentukan kategori berat badan ideal atau tidak</li>
+                <li>Mempersiapkan program penurunan berat badan</li>
+            </ol>
+        </article>
+
+        </section>
+
+        <!-- Section Hasil Kalkulasi -->
+        <section class="main-section">
+            <div>
+                <header>
+                    <h2>Hasil</h2>
+                </header>
+                <div class="BMI-result-control">
+                    <p>BMI Anda</p>
+                    <div id="result-calculation" class="result-calculation-contorl">0</div>
+                    <p id="info-result" class="info-result-contorl">Anda memiliki berat badan</p>
+                </div>
+            </div>
+
+            <div class="bmi-formula">
+                <h3>Cara Menghitung</h3>
+                <p>BMI = Berat Badan (kg) / (Tinggi Badan (m) x Tinggi Badan (m))</p>
+                <p id="calculation"></p>
+            </div>
+
+            <hr class="solid">
+
+            <!-- Third Article -->
+                    <article>
+                    <p class="paragraf"> <strong>Perlu diingat:</strong> <i>  BMI tidak sepenuhnya mewakili diagnosis menyeluruh dari kesehatan tubuh dan resiko penyakit seseorang. Anda perlu konsultasi lebih lanjut mengenai resiko dan kekhawatiran Anda terkait dengan berat badan Anda. </i> </p>
+                </article>
+            </div>
+        </section>
+        
+     </main>
     
+<br class="br-spacing">
+
+     <!-- Footer Website  -->
+    <footer>
+        Made by Aysar Bening with ❤️
+     </footer>
 </body>
+
+
 
 </html>
