@@ -4,8 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website Kalkulator BMI</title>
+    <title>Kalkulator BMI</title>
     <link rel="stylesheet" href="css\styles.css">
+    <script src="js\script.js"></script>
 </head>
 
 <body>
@@ -26,7 +27,7 @@
             <article>
                 <p class="paragraf">Berat badan ideal adalah impian semua orang. Tidak hanya memiliki bentuk tubuh yang menunjang penampilan, berat badan ideal juga menandakan kondisi tubuh yang sehat. Bagaimana denganmu? Yuk, hitung sekarang di BMI Kalkulator.
                 <br> 
-                #BMIsehat #tubuhideal #hidupsehat
+                #Hidupsehat
                 </p>
             </article>
 
@@ -36,8 +37,8 @@
             </div>
                 <label for="jenis-kelamin">Jenis Kelamin:</label>
                     <div class="radio-item">
-                        <input type="radio" name="jenis-kelamin" value="pria" checked> Pria
-                        <input type="radio" name="jenis-kelamin" value="wanita"> Wanita
+                        <input type="radio" checked> Pria
+                        <input type="radio" > Wanita
                     </div>
 
             <div class="form-item">
@@ -61,8 +62,8 @@
 
             <!--Action button-->
             <div class="form-button-container">
-                <button class="bg-primary-button">Hitung BMI</button>
-                <button class="bg-secondary-button">Reset</button>
+                <button class="bg-primary-button" onclick='calculateBmi()'>Hitung BMI</button>
+                <button class="bg-secondary-button" onclick='resetFormBmi()'>Reset</button>
             </div>
         </form>
 
@@ -89,8 +90,8 @@
                 </header>
                 <div class="BMI-result-control">
                     <p>BMI Anda</p>
-                    <div id="result-calculation" class="result-calculation-contorl">0</div>
-                    <p id="info-result" class="info-result-contorl">Anda memiliki berat badan</p>
+                    <p id="result-calculation" class="result-calculation-contorl">0</p>
+                    <p id="info-result" class="info-result-contorl">Keterangan</p>
                 </div>
             </div>
 
@@ -117,8 +118,9 @@
     <footer>
         Made by Aysar Bening with ❤️
      </footer>
-</body>
 
+
+</body>
 
 
 </html>
