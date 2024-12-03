@@ -10,6 +10,7 @@
 
 // ambil semua nilai yang diinput
 function calculateBmi() {
+
     let usia = document.getElementById('usia-input').value
     let beratBadan = document.getElementById('berat-badan-input').value
     // ambil nilai tinggi badan dan konversi ke meter
@@ -37,13 +38,14 @@ function calculateBmi() {
         document.getElementById('info-result').innerHTML = 'Kegemukan (Obesitas)'
     }
 
+
 }
 
 
 function resetFormBmi() {
     document.getElementById("berat-badan-input").value = ""
     document.getElementById("usia-input").value = ""
-    document.getElementById("tinggi-badan-input").textContent = " "
+    document.getElementById("tinggi-badan-input").value = ""
     document.getElementById("result-calculation").textContent = "0"
     document.getElementById("info-result").textContent = "Keterangan"
 }
