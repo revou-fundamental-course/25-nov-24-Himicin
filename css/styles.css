@@ -70,22 +70,30 @@ form {
     border-radius: 12px;
 }
 
+.radio-item {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 8px;
+}
+
 .form-item {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
+    flex-direction: column;
 }
 
 
 label {
     display: block;
-    margin-bottom: 8px;
+    margin-bottom: 4px;
+    margin-top: 8px;
     font-weight: 700;
     color: rgb(15, 24, 16);
 }
 
 input[type=number] {
-    width: 64%;
+    width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
@@ -103,7 +111,7 @@ button {
     border-radius: 4px;
     cursor: pointer;
     border: 1px solid transparent;
-    font-size: 14px;
+    font-size: 16px;
     margin-right: 4px;
 }
 
@@ -155,17 +163,15 @@ button {
 }
 
 .disclaimer-frame {
-    background-color: #f7f7f7;
+    background-color: #f1f1f1;
     border-radius: 12px;
     gap: 1em;
     padding: 16px;
 }
 
-.disclaimer-title {
+.frame-title {
     font-weight: 700;
 }
-
-
 
 /* styling divider (horizontal line break) */
 hr.solid {
@@ -177,3 +183,26 @@ footer{
     text-align: center;
     margin-top: 24px;
    }
+
+
+@media only screen and (max-width: 1020px) {
+    main { 
+        flex-direction: column;
+        margin-left: 64px;
+        margin-right: 64px;
+    }
+    .main-section {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 560px) {
+    main { 
+        flex-direction: column;
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+    .main-section {
+        width: 100%;
+    }
+}
