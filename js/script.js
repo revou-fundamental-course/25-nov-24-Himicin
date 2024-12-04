@@ -16,16 +16,29 @@ function calculateBmi() {
     // ambil nilai tinggi badan dan konversi ke meter
     let tinggiBadan = document.getElementById('tinggi-badan-input').value /100
 
+
+   // validasi input form
+   if (beratBadan !='' && usia !='' && tinggiBadan !='') {
+        console.log = "sukses"
+    } 
+    else {
+        alert('Ada input yang belum diisi. Coba cek lagi!')
+    return
+        }
+
     // validasi usia
     if (usia < 18 || usia > 65) {
         alert ("Mohon maaf 🙏 , usia harus diantara 18 dan 65 tahun.")
+        return
     }
 
-    // hitung bmi
+     // hitung bmi
     let bmi = beratBadan / (tinggiBadan * tinggiBadan)
 
     // hasil bmi
     document.getElementById('result-calculation').innerHTML = bmi.toFixed(2)
+
+    let tes = ""
 
     // ketegori hasil bmi
     if (bmi < 18.5) {
@@ -37,8 +50,6 @@ function calculateBmi() {
     }   else {
         document.getElementById('info-result').innerHTML = 'Kegemukan (Obesitas)'
     }
-
-
 }
 
 
@@ -49,6 +60,3 @@ function resetFormBmi() {
     document.getElementById("result-calculation").textContent = "0"
     document.getElementById("info-result").textContent = "Keterangan"
 }
-
-
-
